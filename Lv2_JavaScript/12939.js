@@ -1,3 +1,5 @@
+// 최댓값과 최솟값 - - 정답률 79%
+
 function solution(s) {
   let answer = '';    
   const nums = s.split(' ').map(num => parseInt(num));
