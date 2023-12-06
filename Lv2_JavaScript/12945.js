@@ -7,17 +7,17 @@ function solution(n) {
   let n_1 = 0;
   let n_2 = 0;
   while (index < n) {
-      if (index === 1) answer = 1 % 1234567;
-      if (index > 1) {
-          if (index === 2) {
-              n_1 = 1;
-              n_2 = 1;
-          }
-          answer = (n_1 + n_2) % 1234567;
-          n_2 = n_1;
-          n_1 = answer;
+    if (index === 1) answer = 1 % 1234567;
+    if (index > 1) {
+      if (index === 2) {
+        n_1 = 1;
+        n_2 = 1;
       }
-      index++;
+      answer = (n_1 + n_2) % 1234567;
+      n_2 = n_1;
+      n_1 = answer;
+    }
+    index++;
   }
       
   return answer;

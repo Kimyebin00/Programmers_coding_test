@@ -7,11 +7,11 @@ function solution(n) {
   binaryN = binaryN.filter(bit => bit === '1');
   
   while (true) {
-      let binaryAnswer = answer.toString(2).split('');
-      binaryAnswer = binaryAnswer.filter(bit => bit === '1');
-      
-      if (binaryN.length === binaryAnswer.length) break;
-      answer++;
+    let binaryAnswer = answer.toString(2).split('');
+    binaryAnswer = binaryAnswer.filter(bit => bit === '1');
+    
+    if (binaryN.length === binaryAnswer.length) break;
+    answer++;
   }
   
   return answer;

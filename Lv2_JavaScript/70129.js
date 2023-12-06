@@ -7,18 +7,18 @@ function solution(s) {
   let changeCount = 0;
   let removeCount = 0;
   while (true) {
-      arrayS.forEach(element => {
-          if (element === '0') removeCount++
-      });
-      arrayS = arrayS.filter(bit => bit === '1');
-      
-      let intS = parseInt(arrayS.length);
-      intS = intS.toString(2);
-          
-      arrayS = intS.split('');
-      changeCount++;
-          
-      if (arrayS.length === 1) break;
+    arrayS.forEach(element => {
+      if (element === '0') removeCount++
+    });
+    arrayS = arrayS.filter(bit => bit === '1');
+    
+    let intS = parseInt(arrayS.length);
+    intS = intS.toString(2);
+        
+    arrayS = intS.split('');
+    changeCount++;
+        
+    if (arrayS.length === 1) break;
   }
   
   answer.push(changeCount);
