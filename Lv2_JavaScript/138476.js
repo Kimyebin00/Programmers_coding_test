@@ -2,7 +2,7 @@
 
 function solution(k, tangerine) {
     let answer = 0;
-    
+    let wantedK = k;
     const dict = {};
     
     tangerine.forEach(element => {
@@ -14,13 +14,12 @@ function solution(k, tangerine) {
     });
     
     const countArray = [];
+    
     for (let key in dict) {
         countArray.push(dict[key]);
     }
     
     const sortedCountArray = countArray.sort((a,b) => b-a);
-    
-    let wantedK = k;
     
     sortedCountArray.forEach(element => {
         if (wantedK !== 0) {
