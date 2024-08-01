@@ -2,6 +2,6 @@
 
 ### Language: JavaScript 
 <br/>
-Lv1: 72/79
+Lv1: 77/79
 <br/>
 Lv2: 16/107
