@@ -2,7 +2,7 @@
 
 ### Language: JavaScript 
 <br/>
-Lv1: 77/79
+Lv1: 78/79
 <br/>
 Lv2: 16/107
 <br/>
